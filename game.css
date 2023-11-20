@@ -1,0 +1,30 @@
+*, *::before , ::after{
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: 100vh;
+    background-color: #622f22;
+}
+
+.grid-container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #f3e3c3; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat (2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
