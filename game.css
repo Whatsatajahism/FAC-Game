@@ -6,12 +6,12 @@
 body{
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100vh;
     height: 100vh;
     background-color: #622f22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container {
@@ -20,11 +20,27 @@ body{
     background-color: #f3e3c3; 
     padding: 10px;
     border-radius: 5px;
+   
 }
 
-.button-grid{
+.btn-grid{
     display: grid;
-    grid-template-columns: repeat (2, auto);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin-top: 20px;
+}
+
+.btn{
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    border-color: black;
+}
+
+@media screen and (max-width: 680px) {
+    .btn-grid{
+        grid-template-columns: 1;
+    }
 }
